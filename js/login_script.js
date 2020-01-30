@@ -23,6 +23,10 @@ function startTest() {
 	
 	window.location.href = "testiranje.html";
 }
+
+function startTrening(){
+	window.location.href = "trening.html";
+}
 /*
 function downloadResults(string) {
 	var blob = new Blob([string], {type: "text/plain;charset=utf-8"});

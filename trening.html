@@ -1,16 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+</head>
+<body oncontextmenu="return false;">
+<h1 style='text-align: center;'>Krug - copy, cut - cikcak, copy - krug, save - kvadrat, paste - kvacica</h1>
+<h1 style='text-align: center;' id='result'>Result: </h1>
+<script type="text/javascript" src="./js/gestures.packed.js" ></script>
+<script type="text/javascript">
 function callback(name)
 {
-	console.log(name);
-	if(zadatak == 1 && name == "Copy" || zadatak == 2 && name == "Paste" || zadatak == 3 && name == "Cut" || zadatak == 4 && name == "Save" || zadatak == 5 && name == "Undo") {
-		kraj_akcije = Math.round((performance.now() - start_unos) * 100) / 100;
-		time_log += zadatak_string +":" + kraj_akcije + ":" + err_num + "\n";
-		set_zad();
-	}
-	else if(device == "tablet") {
-		err_num++;
-		document.getElementById('result').innerHTML = "Kriva gesta";
-	}
-}	
+	document.getElementById("result").innerHTML = "Result: " + name;
+}
+
 var gest = new gestures({
 	debug: true,
 	draw: true,
@@ -80,3 +82,6 @@ for(var angle = 1; angle < totalPoints; angle++)
 
 gest.addGesture("Undo", halfcircle, callback);
 
+</script>
+</body>
+</html>
