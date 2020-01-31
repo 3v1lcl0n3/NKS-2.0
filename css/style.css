@@ -1,23 +1,23 @@
 #Task_form,.tekst{
-	touch-action: none;
-	}
+  touch-action: none;
+}
 	
-	.tekst,#id{
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	-o-user-select: none;
-	user-select: none;
+#id,.tekst{
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 	
-	}
+}
 	
-	#selekcija {
-	background: tomato;
-	color:white;
-	}
+#selekcija {
+  background: tomato;
+  color:white;
+}
 	
-	.menu {
+.menu {
   position: absolute;
   width: 200px;
   padding: 2px;

@@ -12,9 +12,7 @@ function startTest() {
 	else if(rd2.checked == true) {
 		device = rd2.value;
 	}
-	else if(rd3.checked == true) {
-		device = rd3.value;
-	}
+	
 	console.log(id_studenta);
 	console.log(device);
 	
@@ -27,13 +25,3 @@ function startTest() {
 function startTrening(){
 	window.location.href = "trening.html";
 }
-/*
-function downloadResults(string) {
-	var blob = new Blob([string], {type: "text/plain;charset=utf-8"});
-	var date = new Date();
-	var currentDate = [date.getFullYear(), date.getMonth(), date.getDate()].join('');
-	var currentTime = [date.getHours(), date.getMinutes(), date.getSeconds()].join('');
-	var fileName = "keyboard_exp_" + currentDate + "_" + currentTime + ".csv";
-	saveAs(blob, fileName);
-}
-*/
